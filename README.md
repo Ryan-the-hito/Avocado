@@ -17,3 +17,5 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 ### 基本用法
 ### 设置快捷键
 ### 使用情景
+### 不能用来做什么？
+## 现存问题与未来更新
