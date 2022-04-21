@@ -76,7 +76,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
      - 下图为插入特殊命令之后的情况：
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2003.06.21.gif)
-- 以下为可以使用的Apple Script（或从Release中下载）：
+- 以下为可以使用的Apple Script（或从Release中下载Alfred workflow）：
   ```applescript
   on run
   	tell application "System Events" to tell process "Avocado"
@@ -92,10 +92,25 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 	  end tell
   end run
   ```
-- 将{}中的坐标替换为使用者电脑中“Start Avocado”的坐标即可（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
+- 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标即可（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 ### 使用情景
-
-### 不能用来做什么？
-## 未来更新与版本历史
-### 未来更新
+- 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
+- 推荐与OCR软件和文本格式清除软件配合使用
+- 
+### 不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
+- 不能用来100%清除排版上的错误
+- 不能检测由于语义而产生的引号误用
+- 不能检测拼写错误等词法错误
+- 不能排除语法错误
+### 中英文排版规范和标点符号使用规范参见：
+- [中文技术文档写作风格指南]:https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html
+- [中文技术文档写作风格指南]:https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html
+- []
+## 未来改进与版本历史
+### 未来改进
+- 优化核心表达，解决不当删除的bug（极少出现）
+- 可能考虑文件读取和导出
+- 考虑支持日语和韩语
+- 考虑转为Swift
 ### 版本历史
+- 
