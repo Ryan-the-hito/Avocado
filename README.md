@@ -135,3 +135,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 2-bug fix：纯中文和纯英文文本中，遇见数字的时候没有插入空格的情况；
 
 3-中括号和六角括号混用的引用标记可被识别删除，如“〔3]”。
+
+#### v1.3.0
+增加了“中英数三种字符紧挨着的时候增加空格”的功能。
+
