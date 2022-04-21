@@ -125,6 +125,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 考虑转为Swift
 - 主页说明增加效果图示
 - 软件内增加说明窗口
+- 在swift文件窗口的基础上增加选项实现更高客制化水平
 ### 版本历史
 #### v1.4.1（2022-4-21）
 1-bug fixes：如果引用符号中存在空格（如“[3 ]”）则无法准确清除的情况；
