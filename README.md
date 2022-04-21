@@ -139,3 +139,9 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 #### v1.3.0
 增加了“中英数三种字符紧挨着的时候增加空格”的功能。
 
+#### v1.2.0
+1-简化了清除上标（[]、{}和两种六角括号）的代码；
+
+2-将中英混排之后因为分块错误带来的英文括号全部换成中文括号；
+
+3-将中英混排带来的括号前后的空格全部消除。
