@@ -76,6 +76,8 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
      - 下图为插入特殊命令之后的情况：
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2003.06.21.gif)
+  3. 建议将脚本放在第三方软件如Alfred中使用，使用原生的Automator会对每一个需要使用的软件请求Accessibility权限，使用Alfred后一次授权可以避免此情况。
+
 - 以下为可以使用的Apple Script（或从Release中下载Alfred workflow）：
   ```applescript
   on run
