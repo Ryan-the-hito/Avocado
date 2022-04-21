@@ -105,7 +105,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 最后为这个脚本设置触发快捷键，如（opt+A）
 ### 使用情景
 - 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
-- 推荐与 OCR 软件和文本格式清除软件（清除字体颜色粗细字号的软件）配合使用：OCR 软件有如 TextSniper、白描、TReX 等，清除文字格式软件有如 Get Plain Text、Pure Paste 等
+- 推荐与 OCR 软件和文本格式清除软件（清除字体的颜色、粗细、字号的软件）配合使用：OCR 软件有如 TextSniper、白描、TReX 等，清除文字格式软件有如 Get Plain Text、Pure Paste 等
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
@@ -126,6 +126,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 主页说明增加效果图示
 - 软件内增加说明窗口
 - 在 Swift 文件窗口的基础上增加选项实现更高客制化水平
+- 百分号之后增加空格
 ### 版本历史
 #### v1.4.1（2022-4-21）
 1-bug fix：如果引用符号中存在空格（如“[3 ]”）则无法准确清除的情况；
