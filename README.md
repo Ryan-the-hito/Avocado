@@ -145,3 +145,6 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 2-将中英混排之后因为分块错误带来的英文括号全部换成中文括号；
 
 3-将中英混排带来的括号前后的空格全部消除。
+
+#### v.1.1.0
+替换装入剪贴板的模块为pyperclip，避免出现乱码。
