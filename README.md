@@ -3,7 +3,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 
 # 🥑Avocado：一个文本清洁工具
 ## 功能列表
-- 对所有文本：
+1. 对所有文本：
   - 清除不必要的记号：
     - 换行符
     - 段落标记
@@ -29,10 +29,10 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
     - 前弯双引号后直双引号（“"）改为前后弯双引号（“”）
     - 替换成对的直双引号（""）为成对的弯双引号（“”）
     - 替换成对的直单引号（''）为成对的弯单引号（“”）
-- 对纯数字文本：
+2. 对纯数字文本：
   - 清除数字中的空格
   - 将全角数字转为半角数字
-- 对中文（和数字混排）：
+3. 对中文（和数字混排）：
   - 去除某些符号及空格：“*”、“#”、“^”、“～”、“~”
   - 修改一些排版中常见的符号错误：
     - 替换两个连续中文句号（。。）为一个句号（。）
@@ -40,12 +40,12 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
   - 将中文和数字混排中的全角数字转为半角数字，不改变标点的全半角情况
   - 给中文和数字的临近字符中间增加空格
   - 将常用英文标点转换为中文标点：（,.;:!?[]()<>）➡️（，。；：！？【】（）《》）
-- 对英文（和数字混排）：
+4. 对英文（和数字混排）：
   - 将全角英文和全角数字转为半角英文和半角数字
   - 将文段中的中文标点转换为英文标点（，。；：！？【】（）《》）➡️（,.;:!?[]()<>）
   - 给英文和数字的临近字符中间增加空格
   - 替换两个连续空格为一个空格
-- 对中英（和数字）混排文本：识别中英文字符，对中英文文段分别处理，再合成一个总文段进行集中处理。标点默认使用原文标点，整体语境以中文为主。
+5. 对中英（和数字）混排文本：识别中英文字符，对中英文文段分别处理，再合成一个总文段进行集中处理。标点默认使用原文标点，整体语境以中文为主。
   - 对中文：
     - 去除某些符号及空格：“*”、“#”、“^”、“～”、“~”
     - 修改一些排版中常见的符号错误：
@@ -61,8 +61,18 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
     - 替换两个连续空格为一个空格
 ## 用法介绍
 ### 基本用法
+1. 复制需要清理的文段
+2. 在menubar中点击“Start Avocado”
+3. 粘贴至需要插入文段的位置
 ### 设置快捷键
-![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2002.51.10.gif)
+- 由于rumps包无法在menubar app中增加原生快捷键，此处推荐使用Apple Script模拟屏幕点击为Avocado增加快捷键。
+- 注意⚠️：
+  1. 第一个点击可以使用系统命令，第二个点击必须使用屏幕坐标。
+  2. 两次点击的命令中间必须使用特殊命令行绕过Apple Script两次动作间间隔5秒的设置。
+  下图为没有插入特殊命令的情况：
+  ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2002.51.10.gif)
+  下图为插入特殊命令之后的情况：
+  ![avatar]()
 ### 使用情景
 
 ### 不能用来做什么？
