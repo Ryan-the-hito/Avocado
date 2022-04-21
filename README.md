@@ -95,8 +95,10 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标即可（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 ### 使用情景
 - 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
-- 推荐与OCR软件和文本格式清除软件配合使用
-- 
+- 推荐与OCR软件和文本格式清除软件（清除字体颜色粗细字号的软件）配合使用：OCR软件有如TextSniper、白描、TReX等，清除文字格式软件有如Get Plain Text、Pure Paste等
+  
+  ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
+
 ### 不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
 - 不能用来100%清除排版上的错误
 - 不能检测由于语义而产生的引号误用
@@ -105,7 +107,6 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 ### 中英文排版规范和标点符号使用规范参见：
 - [中文技术文档写作风格指南]:https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html
 - [中文技术文档写作风格指南]:https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html
-- []
 ## 未来改进与版本历史
 ### 未来改进
 - 优化核心表达，解决不当删除的bug（极少出现）
