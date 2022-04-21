@@ -123,7 +123,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 软件内增加说明窗口
 ### 版本历史
 #### v1.4.1（2022-4-21）
-1-bug fixes：如果引用符号中存在空格，如“[3 ]”无法清除的情况；
+1-bug fixes：如果引用符号中存在空格（如“[3 ]”）则无法准确清除的情况；
 
 2-精简带圈数字的代码，新增对黑底带圈数字（0-20）的支持，可一键清除；
 
