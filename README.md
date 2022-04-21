@@ -17,7 +17,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 ## 用法介绍
 ### 基本用法
 ### 设置快捷键
-![avatar](/Users/ryanshenefield/Documents/1-研一下/Z杂余/CleanShot 2022-04-16 at 03.06.21.gif)
+![avatar]()
 ### 使用情景
 
 ### 不能用来做什么？
