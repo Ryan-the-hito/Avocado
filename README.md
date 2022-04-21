@@ -119,6 +119,8 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 可能考虑文件读取和导出
 - 考虑支持日语和韩语
 - 考虑转为Swift
+- 主页说明增加效果图示
+- 软件内增加说明窗口
 ### 版本历史
 #### v1.4.1（2022-4-21）
 1-bug fixes：如果引用符号中存在空格，如“[3 ]”无法清除的情况；
