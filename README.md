@@ -69,10 +69,30 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 注意⚠️：
   1. 第一个点击可以使用系统命令，第二个点击必须使用屏幕坐标。
   2. 两次点击的命令中间必须使用特殊命令行绕过Apple Script两次动作间间隔5秒的设置。
-  下图为没有插入特殊命令的情况：
-  ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2002.51.10.gif)
-  下图为插入特殊命令之后的情况：
-  ![avatar]()
+     - 下图为没有插入特殊命令的情况：
+     
+     ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2002.51.10.gif)
+  
+     - 下图为插入特殊命令之后的情况：
+  
+     ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2003.06.21.gif)
+- 以下为可以使用的Apple Script（或从Release中下载）：
+  ```applescript
+  on run
+  	tell application "System Events" to tell process "Avocado"
+		  ignoring application responses
+			  click menu bar item "🥑" of menu bar 1 of application process "Avocado" of application "System Events"
+		  end ignoring
+	  end tell
+	  delay 0.1
+	  do shell script "killall System\\ Events"
+	
+	  tell application "System Events"
+		  click at {1200, 40}
+	  end tell
+  end run
+  ```
+- 将{}中的坐标替换为使用者电脑中“Start Avocado”的坐标即可（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 ### 使用情景
 
 ### 不能用来做什么？
