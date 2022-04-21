@@ -65,7 +65,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 2. 在menubar中点击“Start Avocado”
 3. 粘贴至需要插入文段的位置
 ### 设置快捷键
-- 由于rumps包无法在menubar app中增加原生快捷键，此处推荐使用Apple Script模拟屏幕点击为Avocado增加快捷键。
+- 由于rumps包无法在menubar app中增加原生快捷键，此处推荐使用Apple Script模拟屏幕点击，再给此脚本增加快捷键。
 - 注意⚠️：
   1. 第一个点击可以使用系统命令，第二个点击必须使用屏幕坐标。
   2. 两次点击的命令中间必须使用特殊命令行绕过Apple Script两次动作间间隔5秒的设置。
@@ -76,8 +76,11 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
      - 下图为插入特殊命令之后的情况：
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2003.06.21.gif)
+  
   3. 建议将脚本放在第三方软件如Alfred中使用，使用原生的Automator会对每一个需要使用的软件请求Accessibility权限，使用Alfred后一次授权可以避免此情况。
+  
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.14.03%402x.png)
+     
 - 以下为可以使用的Apple Script（或从Release中下载Alfred workflow）：
   ```applescript
   on run
@@ -94,7 +97,8 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 	  end tell
   end run
   ```
-- 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标即可（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
+- 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
+- 最后为这个脚本设置触发快捷键，如（opt+A）
 ### 使用情景
 - 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
 - 推荐与OCR软件和文本格式清除软件（清除字体颜色粗细字号的软件）配合使用：OCR软件有如TextSniper、白描、TReX等，清除文字格式软件有如Get Plain Text、Pure Paste等
