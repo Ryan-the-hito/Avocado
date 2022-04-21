@@ -1,7 +1,8 @@
-# 🥑Avocado: The Text Cleaner
+# 🥑Avocado: A Text Tool for Better Typesetting
 An app on mac to help you remove unwanted spaces and wrong symbols with one click when organizing paragraph with both Chinese and English.
 
-# 🥑Avocado：一个文本清洁工具
+# 🥑Avocado：一个文本排版与清理工具
+Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英文文本（尤其是混排文本）中那些非语义的排版错误。当你打开它时，它会在任务栏（menubar）中运作，十分简洁明了。最重要的是，它是全局性的，不会受限于任何一个特定的软件，可随取随用。
 ## 功能列表
 **1. 对所有文本：**
   - 清除不必要的记号：
@@ -104,8 +105,9 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 - 最后为这个脚本设置触发快捷键，如（opt+A）
 ### 使用情景
-- 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
-- 推荐与 OCR 软件和文本格式清除软件（清除字体的颜色、粗细、字号的软件）配合使用：OCR 软件有如 TextSniper、白描、TReX 等，清除文字格式软件有如 Get Plain Text、Pure Paste 等
+- 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景。
+- 可以用来检查自己写的一段话里面有没有排版问题，并一键纠正（有引用的情况除外）。
+- 推荐与 OCR 软件和文本格式清除软件（清除字体的颜色、粗细、字号的软件）配合使用：OCR 软件有 TextSniper、白描、TReX 等，清除文字格式软件有 Get Plain Text、Pure Paste 等。
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
@@ -117,6 +119,7 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 ### 中英文排版规范和标点符号使用规范参见：
 - [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html)
 - [中文文档中英文混写混排规范](https://www.lzc256.com/archives/552/#toc_5)
+- [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 ## 未来改进与版本历史
 ### 未来改进
 - 优化核心表达，解决不当删除的bug（极少出现）
