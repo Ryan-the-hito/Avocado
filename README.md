@@ -66,13 +66,13 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 ## 用法介绍
 ### 基本用法
 1. 复制需要清理的文段
-2. 在menubar中点击“Start Avocado”
+2. 在 menubar 中点击“Start Avocado”
 3. 粘贴至需要插入文段的位置
 ### 设置快捷键
-- 由于rumps包无法在menubar app中增加原生快捷键，此处推荐使用Apple Script模拟屏幕点击，再给此脚本增加快捷键。
+- 由于 rumps 包无法在 menubar app 中增加原生快捷键，此处推荐使用 Apple Script 模拟屏幕点击，再给此脚本增加快捷键。
 - 注意⚠️：
   1. 第一个点击可以使用系统命令，第二个点击必须使用屏幕坐标。
-  2. 两次点击的命令中间必须使用特殊命令行绕过Apple Script两次动作间间隔5秒的设置。
+  2. 两次点击的命令中间必须使用特殊命令行绕过 Apple Script 两次动作间间隔 5 秒的设置。
      - 下图为没有插入特殊命令的情况：
      
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2002.51.10.gif)
@@ -81,11 +81,11 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-16%20at%2003.06.21.gif)
   
-  3. 建议将脚本放在第三方软件如Alfred中使用，使用原生的Automator会对每一个需要使用的软件请求Accessibility权限，使用Alfred后一次授权可以避免此情况。
+  3. 建议将脚本放在第三方软件如 Alfred 中使用，使用原生的 Automator 会对每一个需要使用的软件请求 Accessibility 权限，使用 Alfred 后一次授权可以避免此情况。
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.14.03%402x.png)
      
-- 以下为可以使用的Apple Script（或从Release中下载Alfred workflow）：
+- 以下为可以使用的 Apple Script（或从 Release 中下载 Alfred workflow）：
   ```applescript
   on run
   	tell application "System Events" to tell process "Avocado"
@@ -105,12 +105,12 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 最后为这个脚本设置触发快捷键，如（opt+A）
 ### 使用情景
 - 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景
-- 推荐与OCR软件和文本格式清除软件（清除字体颜色粗细字号的软件）配合使用：OCR软件有如TextSniper、白描、TReX等，清除文字格式软件有如Get Plain Text、Pure Paste等
+- 推荐与 OCR 软件和文本格式清除软件（清除字体颜色粗细字号的软件）配合使用：OCR 软件有如 TextSniper、白描、TReX 等，清除文字格式软件有如 Get Plain Text、Pure Paste 等
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
 ### 不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
-- 不能用来100%清除排版上的错误
+- 不能用来 100% 清除排版上的错误
 - 不能检测由于语义而产生的引号误用
 - 不能检测拼写错误等词法错误
 - 不能排除语法错误
@@ -122,13 +122,13 @@ An app on mac to help you remove unwanted spaces and wrong symbols with one clic
 - 优化核心表达，解决不当删除的bug（极少出现）
 - 可能考虑文件读取和导出
 - 考虑支持日语和韩语
-- 考虑转为Swift
+- 考虑转为 Swift
 - 主页说明增加效果图示
 - 软件内增加说明窗口
-- 在swift文件窗口的基础上增加选项实现更高客制化水平
+- 在 Swift 文件窗口的基础上增加选项实现更高客制化水平
 ### 版本历史
 #### v1.4.1（2022-4-21）
-1-bug fixes：如果引用符号中存在空格（如“[3 ]”）则无法准确清除的情况；
+1-bug fix：如果引用符号中存在空格（如“[3 ]”）则无法准确清除的情况；
 
 2-精简带圈数字的代码，新增对黑底带圈数字（0-20）的支持，可一键清除；
 
