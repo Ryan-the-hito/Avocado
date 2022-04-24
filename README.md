@@ -69,7 +69,8 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 1. 从右边的 Release 页面里面下载第一个压缩包；
 2. 解压之后将 app 文件拖放到“应用程序”（Application）文件夹内；
 3. 从启动器（Launchpad）中点击启动，可以设为开机自启，目前软件运行时，程序坞（Dock）中会一直显示应用图标；
-4. 如果遇到报警 Alert，请转到“系统设置”（System Preferences）-“安全和隐私”（Security & Privacy）-“通用”（General）面板，选择信任该软件并打开。
+4. 有可能需要进入系统设置开启辅助功能的权限。（如果需要应该会有弹窗，或主动进入系统设置中手动添加也可）
+5. 如果遇到报警 Alert，请转到“系统设置”（System Preferences）-“安全和隐私”（Security & Privacy）-“通用”（General）面板，选择信任该软件并打开。
 ### 基本用法
 1. 复制需要清理的文段
 2. 在 menubar 中点击“Start Avocado”
