@@ -97,7 +97,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
   on run
   	tell application "System Events" to tell process "Avocado"
 		  ignoring application responses
-			  click menu bar item "🥑" of menu bar 1 of application process "Avocado" of application "System Events"
+			  click menu bar item 1 of menu bar 1 of application process "Avocado" of application "System Events"
 		  end ignoring
 	  end tell
 	  delay 0.1
