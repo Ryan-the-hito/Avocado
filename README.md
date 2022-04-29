@@ -92,7 +92,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
   
      ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.14.03%402x.png)
      
-- 以下为可以使用的 Apple Script（或从 Release 中下载 Alfred workflow）：
+- 以下为可以使用的 Apple Script（或从 Release 中下载 Alfred workflow）（v1.5.0及之后）：
   ```applescript
   on run
   	tell application "System Events" to tell process "Avocado"
@@ -108,7 +108,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 	  end tell
   end run
   ```
-- 将{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
+- 将{1177, 11}和{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 - 最后为这个脚本设置触发快捷键，如（opt+A）
 ### 软件更新
 1. 从 Github 的 Release 页面上下载最新的版本；
