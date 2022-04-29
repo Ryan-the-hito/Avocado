@@ -97,7 +97,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
   on run
   	tell application "System Events" to tell process "Avocado"
 		  ignoring application responses
-			  click menu bar item 1 of menu bar 1 of application process "Avocado" of application "System Events"
+			  click at {1177, 11}
 		  end ignoring
 	  end tell
 	  delay 0.1
@@ -147,6 +147,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 - [x] 重构软件架构
 - [ ] 将清除换行的功能从原软件中变为可选项
 - [ ] 增加对繁体字和简体字相互转换的支持
+- [ ] 软件启动的时候不要把每个窗口都打开
 ### 版本历史
 #### v1.5.0（2022-4-29）
 1-重构软件框架，更换 rumps 模块为 PyQt6（⬆️未来改进）；
