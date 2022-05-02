@@ -1,4 +1,4 @@
-# 🥑Avocado: A Text Tool for Better Typesetting <br />一个文本排版与清理工具
+# 🥑Avocado: A Text Tool for Better Typesetting <br />一个文本清理与排版工具
 
 An app on mac to help you remove unwanted spaces and wrong symbols with one click when organizing paragraph with both Chinese and English.
 
