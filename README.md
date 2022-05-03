@@ -73,7 +73,9 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
     - 替换两个连续空格为一个空格
     - 百分号之后、度数符号之后增加空格，之前删去空格。人民币和美元符号之前增加空格，如果是标点则不加空格
 ## 界面一览
-- 
+
+![Menu](https://github.com/Ryan-the-hito/Avocado/raw/main/image/Menu.png)
+
 ## 用法介绍
 ### 1.软件安装
 1. 从右边的 Release 页面里面下载第一个压缩包；
