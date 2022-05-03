@@ -99,7 +99,7 @@ end run
 
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/new_hotkey.png)
   
-#### 1.5.0版之后可使用以下的模拟点击的命令：
+#### 1.5.0版之后可使用以下模拟点击的命令：
 - 由于 rumps 包无法在 menubar app 中增加原生快捷键，此处推荐使用 Apple Script 模拟屏幕点击，再给此脚本增加快捷键。
 - 注意⚠️：
   1. 第一个点击可以使用系统命令（v1.5.0之后不建议使用系统命令，两个都用屏幕坐标即可），第二个点击必须使用屏幕坐标。
