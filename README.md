@@ -76,6 +76,28 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 2. 在 menubar 中点击“Start Avocado”
 3. 粘贴至需要插入文段的位置
 ### 设置快捷键
+#### 1.6.0版之后请使用以下命令：
+- 与此前的版本相同，1.6.0之后也不支持原生的全局快捷键，但是可以在菜单栏中更快捷地调用 Apple Script 的快捷键，无需模拟屏幕点击。
+- 以下分别为启动“Start Avocado”和“Avocado with Line Breaks”的 Apple Script（或从 Release 中下载 Alfred workflow）（v1.6.0及之后）：
+```applescript
+on run
+  	tell application "System Events" to tell process "Avocado"
+		click menu item "Start Avocado" of menu "Actions" of menu bar item "Actions" of menu bar 1 of application process "Avocado" of application "System Events"
+	end tell
+end run
+```
+```applescript
+on run
+  	tell application "System Events" to tell process "Avocado"
+		click menu item "Avocado with Line Breaks" of menu "Actions" of menu bar item "Actions" of menu bar 1 of application process "Avocado" of application "System Events"
+	end tell
+end run
+```
+- 同样可以装载到 Alfred 中全局使用：
+
+  ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/new_hotkey.png)
+  
+#### 1.5.0版之后可使用以下的模拟点击的命令：
 - 由于 rumps 包无法在 menubar app 中增加原生快捷键，此处推荐使用 Apple Script 模拟屏幕点击，再给此脚本增加快捷键。
 - 注意⚠️：
   1. 第一个点击可以使用系统命令（v1.5.0之后不建议使用系统命令，两个都用屏幕坐标即可），第二个点击必须使用屏幕坐标。
@@ -120,6 +142,11 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
+### 隐藏 Dock 图标
+- 请参考[MacOS Dock 栏软件图标隐藏终端工具](https://github.com/howie6879/leaf)
+	- 下载并安装 Python；
+	- 在终端（Terminal）中按照指南安装 leaf；
+	- 在终端（Terminal）中使用对应的指令隐藏和显示特定的软件（对所有电脑上的软件都可进行操作）。
 ### 不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
 - 不能用来 100% 清除排版上的错误
 - 不能检测由于语义而产生的引号误用
