@@ -82,6 +82,8 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 
 ![Exp_C](https://github.com/Ryan-the-hito/Avocado/raw/main/image/exp_C.png)
 
+![All](https://github.com/Ryan-the-hito/Avocado/raw/main/image/49165CAC-0F4D-4DA0-B824-7D8464249E2D.jpeg)
+
 ## 用法介绍
 ### 1.软件安装
 1. 从右边的 Release 页面里面下载第一个压缩包；
