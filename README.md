@@ -1,4 +1,4 @@
-# Avocado🥑: A Text Tool for Better Typesetting <br />一个文本清理工具
+# Avocado🥑 A Text Tool for Better Typesetting
 
 ![Title](https://github.com/Ryan-the-hito/Avocado/raw/main/image/Title.png)
 
