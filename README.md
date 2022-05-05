@@ -1,4 +1,4 @@
-# Avocado🥑 A Text Tool for Better Typesetting
+# Avocado🥑: A Text Tool for Better Typesetting
 
 ![Title](https://github.com/Ryan-the-hito/Avocado/raw/main/image/Title.png)
 
