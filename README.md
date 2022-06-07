@@ -96,7 +96,24 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 2. 在 menubar 中点击“Start Avocado”等对应的功能键；
 3. 粘贴（cmd + v）至需要插入文段的位置。
 ### 3.设置快捷键
-#### 1.6.0 版之后请使用以下命令：
+#### 1.6.7 版之后请使用以下命令（亦可前往发布页下载）：
+```applescript
+on run
+  	tell application "System Events" to tell process "Avocado"
+		ignoring application responses
+			click menu item "Start Avocado" of menu "Actions" of menu bar item "Actions" of menu bar 1 of application process "Avocado" of application "System Events"
+		end ignoring
+	end tell
+	delay 0.1
+	do shell script "killall System\\ Events"
+
+	tell application "System Events" to tell process "Avocado"
+		click menu bar item 1 of menu bar 2 of application process "Avocado" of application "System Events"
+	end tell
+end run
+```
+
+#### 1.6.0 版之后（至 1.6.6 版）请使用以下命令：
 - 与此前的版本相同，1.6.0 之后也不支持原生的全局快捷键，但是可以在菜单栏中更快捷地调用 Apple Script 的快捷键，无需模拟屏幕点击。
 - 以下分别为启动“Start Avocado”和“Avocado with Line Breaks”的 Apple Script（或从 Release 中下载 Alfred workflow）（v1.6.0 及之后）：
 ```applescript
@@ -117,7 +134,7 @@ end run
 
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/new_hotkey.png)
   
-#### 1.5.0 版之后可使用以下模拟点击的命令：
+#### 1.5.0 版之后（至 1.6.0 版）可使用以下模拟点击的命令：
 - 由于 rumps 包无法在 menubar app 中增加原生快捷键，此处推荐使用 Apple Script 模拟屏幕点击，再给此脚本增加快捷键。
 - 注意⚠️：
   1. 第一个点击可以使用系统命令（v1.5.0 之后不建议使用系统命令，两个都用屏幕坐标即可），第二个点击必须使用屏幕坐标。
