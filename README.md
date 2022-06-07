@@ -155,16 +155,16 @@ end run
   ```applescript
   on run
   	tell application "System Events" to tell process "Avocado"
-		  ignoring application responses
-			  click at {1177, 11}
-		  end ignoring
-	  end tell
-	  delay 0.1
-	  do shell script "killall System\\ Events"
+		ignoring application responses
+			click at {1177, 11}
+		end ignoring
+	end tell
+	delay 0.1
+	do shell script "killall System\\ Events"
 	
-	  tell application "System Events"
-		  click at {1200, 40}
-	  end tell
+	tell application "System Events"
+		click at {1200, 40}
+	end tell
   end run
   ```
 - 将{1177, 11}和{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
@@ -179,7 +179,7 @@ end run
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
-### 6.隐藏 Dock 图标
+### 6.隐藏 Dock 图标（自 1.6.7 版之后软件默认隐藏 Dock 图标）
 - 请参考[MacOS Dock 栏软件图标隐藏终端工具](https://github.com/howie6879/leaf)
 	- 下载并安装 Python；
 	- 在终端（Terminal）中按照指南安装 leaf；
