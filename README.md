@@ -72,6 +72,7 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
     - 给中英数三种字符两两相邻的符号之间插入空格
     - 替换两个连续空格为一个空格
     - 百分号之后、度数符号之后增加空格，之前删去空格。人民币和美元符号之前增加空格，如果是标点则不加空格
+
 ## 界面一览
 
 ![Menu](https://github.com/Ryan-the-hito/Avocado/raw/main/image/Menu.png)
@@ -84,18 +85,29 @@ Avocado 是一个在 macOS 上运行的小软件，它可以一键清理中英�
 
 ![All](https://github.com/Ryan-the-hito/Avocado/raw/main/image/49165CAC-0F4D-4DA0-B824-7D8464249E2D.jpeg)
 
-## 用法介绍
-### 1.软件安装
+## 环境要求
+
+- MacOS（测试环境为 MacOS 12.6.5）
+- M1、M2 芯片
+
+## 下载安装
+
 1. 从右边的 Release 页面里面下载第一个压缩包；
 2. 解压之后将 app 文件拖放到“应用程序”（Application）文件夹内；
 3. 从启动器（Launchpad）中点击启动，可以设为开机自启，目前软件运行时，程序坞（Dock）中会一直显示应用图标；
 4. 有可能需要进入系统设置开启辅助功能的权限。（如果需要应该会有弹窗，或主动进入系统设置中手动添加也可）
 5. 如果遇到报警 Alert，请转到“系统设置”（System Preferences）-“安全和隐私”（Security & Privacy）-“通用”（General）面板，选择信任该软件并打开。
-### 2.基本用法
+
+## 使用说明
+
+### 基本用法
+
 1. 复制（cmd + c）需要清理的文段；
 2. 在 menubar 中点击“Start Avocado”等对应的功能键；
 3. 粘贴（cmd + v）至需要插入文段的位置。
-### 3.设置快捷键
+
+### 设置快捷键
+
 #### 1.6.7 版之后请使用以下命令（亦可前往发布页下载）：
 ```applescript
 on run
@@ -169,39 +181,57 @@ end run
   ```
 - 将{1177, 11}和{1200， 40}中的坐标替换为使用者电脑中“Start Avocado”的坐标（可使用系统自带的截图功能，将光标放到对应位置，查看目标位置的坐标）。
 - 最后为这个脚本设置触发快捷键，如（opt+A）
-### 4.软件更新
+
+### 软件更新
+
 1. 从 Github 的 Release 页面上下载最新的版本；
 2. 将下载到本地的软件拖入“应用程序”（Application）文件夹，跳出窗口，选择覆盖原来的应用文件。
-### 5.使用情景
+
+### 使用情景
+
 - 可适应阅读文献、读书摘抄、浏览页面摘抄等多个场景。
 - 可以用来检查自己写的一段话里面有没有排版问题，并一键纠正（有引用的情况除外）。
 - 推荐与 OCR 软件和文本格式清除软件（清除字体的颜色、粗细、字号的软件）配合使用：OCR 软件有 TextSniper、白描、TReX 等，清除文字格式软件有 Get Plain Text、Pure Paste 等。
   
   ![avatar](https://raw.githubusercontent.com/Ryan-the-hito/Avocado/main/image/CleanShot%202022-04-21%20at%2017.01.16.gif)
 
-### 6.隐藏 Dock 图标（自 1.6.7 版之后软件默认隐藏 Dock 图标）
+### 隐藏 Dock 图标（自 1.6.7 版之后软件默认隐藏 Dock 图标）
 - 请参考[MacOS Dock 栏软件图标隐藏终端工具](https://github.com/howie6879/leaf)
 	- 下载并安装 Python；
 	- 在终端（Terminal）中按照指南安装 leaf；
 	- 在终端（Terminal）中使用对应的指令隐藏和显示特定的软件（对所有电脑上的软件都可进行操作）。
-### 7.不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
+
+## 注意事项
+
+### 不能用来做什么？（请使用软件清理文段之后多瞅一眼，检查清理情况是否符合需求）
 - 不能用来 100% 清除排版上的错误；
 - 不能检测由于语义而产生的引号误用；
 - 不能检测拼写错误等词法错误；
 - 不能排除语法错误；
 - 不能用来复制代码和处理代码，因为本软件意在符合中英文混排规范，而非代码规范，请注意使用环境的表达规范。（处理代码有可能出现文本残缺的现象）
-### 8.中英文排版规范和标点符号使用规范参见：
+
+### 中英文排版规范和标点符号使用规范参见：
 - [标点符号用法-中华人民共和国教育部](http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/13/20150113091548267.pdf)
 - [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html)
 - [中文文档中英文混写混排规范](https://www.lzc256.com/archives/552/#toc_5)
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 - [简易中文简繁转换](https://github.com/gumblex/zhconv)
+
+## 支持作者
+
+<p align="center">
+  <img src="https://i.imgur.com/OHHJD4y.png" width=240 />
+  <img src="https://i.imgur.com/6XiKMAK.png" width=240 />
+</p>
+
 ## 未来改进与版本历史
+
 ### 未来改进
+
 - [x] ~~优化核心表达，解决不当删除的 bug~~（极少出现）
 - [ ] 可能考虑文件读取和导出（长远考虑）
 - [ ] 考虑支持日语和韩语（长远考虑）
-- [ ] 考虑转为 Swift（长远考虑）
+- [x] ~~考虑转为 Swift（不考虑了）~~
 - [x] ~~在主页说明增加效果图示~~
 - [x] ~~软件内增加说明窗口~~
 - [ ] 在 Swift 文件窗口的基础上增加选项实现更高客制化水平（长远考虑）
